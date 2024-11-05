@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizzabot</title>
+  </head>
+  <body>
+    <h1>Welcome to your pizzeria!</h1>
+    <h2>Order Your Pizza</h2>
+
+    <form id="pizzaForm">
+      <label for="pizzaType">Choose your pizza:</label>
+      <select id="pizzaType" required>
+        <option value="">Select a pizza</option>
+        <option value="Vegetarian Pizza">Vegetarian Pizza</option>
+        <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+        <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+      </select>
+
+      <label for="pizzaQuantity">How many pizzas?</label>
+      <input type="number" id="pizzaQuantity" min="1" required />
+      <button type="submit">Order Now</button>
+    </form>
+
+    <script src="./pizzabot.js" charset="utf-8"></script>
+  </body>
+</html>
